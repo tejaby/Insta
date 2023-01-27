@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="img/instagram.png" type="image/x-icon">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="firstContainer">
+        <div class="container-Login">
+            <div class="login">
+                <div class="logo">
+                    <div>
+                        <a href="#" class="instagram">Instagram</a>
+                    </div>
+                </div>
+                <form class="formLogin" id="formLogin" autocomplete="off">
+                    <div>
+                        <input type="usuario" name="usuario" class="usuario" id="user" placeholder="Usuario" spellcheck="false">
+                        <input type="password" name="password" class="password" id="pass" placeholder="Contraseña" spellcheck="false">
+                        <button id="enviar" class="enviar">Entrar</button>
+                    </div>
+                </form>
+                <div class="more">
+                    <div>
+                        <span><i class="bi bi-facebook"></i>Iniciar sesion con facebook</span>
+                        <a href="#">¿Has olvidado la contraseña?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nothing">
+            </div>
+            <div class="register">
+                <div class="signin">
+                    <div>
+                        <span>¿No tienes una cuenta?</span>
+                        <button id="registrate" class="registrate">Registrate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="secondContainer">
+        <div class="container-Register">
+            <div class="register">
+                <div class="logo">
+                    <div>
+                        <a href="#" class="instagram">Instagram</a>
+                        <span class="info">Regístrate para ver fotos y vídeos de tus amigos.</span>
+                        <button>
+                            <i class="bi bi-facebook"></i><span>Iniciar sesion con facebook</span>
+                        </button>
+                    </div>
+                </div>
+                <form class="formRegister" id="formRegister" autocomplete="off">
+                    <div>
+                        <input type="email" name="email" class="email" id="email" placeholder="Correo electrónico" spellcheck="false">
+                        <input type="text" name="nombre" class="nombre" id="nombre" placeholder="Nombre completo" spellcheck="false">
+                        <input type="text" name="usuario" class="usuario" id="usuario" placeholder="Usuario" spellcheck="false">
+                        <input type="password" name="password" class="password" id="password" placeholder="Contraseña" spellcheck="false">
+                        <span>Al registrarte, aceptas nuestras Condiciones, nuestra Política de privacidad y nuestra Política de cookies.</span>
+                        <button id="send" class="send">Registrate</button>
+                    </div>
+                </form>
+            </div>
+            <div class="nothing">
+            </div>
+            <div class="iniciar">
+                <div class="entrar">
+                    <div>
+                        <span>¿Tienes una cuenta?</span>
+                        <button id="IniciarSesion" class="IniciarSesion">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="./script.js" type="module"></script>
+    <script>
+        history.forward();
+    </script>
+</html>
