@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
     <div class="firstContainer">
         <div class="container-Login">
             <div class="login">
@@ -21,9 +23,12 @@
                 </div>
                 <form class="formLogin" id="formLogin" autocomplete="off">
                     <div>
-                        <input type="usuario" name="usuario" class="usuario" id="user" placeholder="Usuario" spellcheck="false">
-                        <input type="password" name="password" class="password" id="pass" placeholder="Contraseña" spellcheck="false">
+                        <input type="usuario" name="usuario" class="usuario" id="user" placeholder="Usuario"
+                            spellcheck="false">
+                        <input type="password" name="password" class="password" id="pass" placeholder="Contraseña"
+                            spellcheck="false">
                         <button id="enviar" class="enviar">Entrar</button>
+                        <span class="msg-login"></span>
                     </div>
                 </form>
                 <div class="more">
@@ -45,7 +50,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="secondContainer">
         <div class="container-Register">
             <div class="register">
@@ -60,12 +65,18 @@
                 </div>
                 <form class="formRegister" id="formRegister" autocomplete="off">
                     <div>
-                        <input type="email" name="email" class="email" id="email" placeholder="Correo electrónico" spellcheck="false">
-                        <input type="text" name="nombre" class="nombre" id="nombre" placeholder="Nombre completo" spellcheck="false">
-                        <input type="text" name="usuario" class="usuario" id="usuario" placeholder="Usuario" spellcheck="false">
-                        <input type="password" name="password" class="password" id="password" placeholder="Contraseña" spellcheck="false">
-                        <span>Al registrarte, aceptas nuestras Condiciones, nuestra Política de privacidad y nuestra Política de cookies.</span>
+                        <input type="email" name="email" class="email" id="email" placeholder="Correo electrónico"
+                            spellcheck="false">
+                        <input type="text" name="nombre" class="nombre" id="nombre" placeholder="Nombre completo"
+                            spellcheck="false">
+                        <input type="text" name="usuario" class="usuario" id="usuario" placeholder="Usuario"
+                            spellcheck="false">
+                        <input type="password" name="password" class="password" id="password" placeholder="Contraseña"
+                            spellcheck="false">
+                        <span>Al registrarte, aceptas nuestras Condiciones, nuestra Política de privacidad y nuestra
+                            Política de cookies.</span>
                         <button id="send" class="send">Registrate</button>
+                        <span class="msg-register"></span>
                     </div>
                 </form>
             </div>
@@ -83,8 +94,9 @@
     </div>
 
 </body>
-    <script src="./script.js" type="module"></script>
-    <script>
-        history.forward();
-    </script>
+<script src="./script.js" type="module"></script>
+<script>
+    history.forward();
+</script>
+
 </html>

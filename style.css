@@ -1,363 +1,372 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap");
 
 body {
-    background: #ffffff;
-    font-family: 'Oswald', sans-serif;
+  background: #ffffff;
+  font-family: "Oswald", sans-serif;
 }
 
 /* Container Login */
 
-.firstContainer{
-    background: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.firstContainer {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
 
-.firstContainer .container-Login{
-    margin: auto;
-    margin-top: 50px;
-    background: #ffffff;
-    height: 450px;
-    width: 350px;
-    border-radius: 6px;
-    border: 1px solid #dbdbdb;
-    /* padding: 10px; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    overflow: hidden;   
+.firstContainer .container-Login {
+  margin: auto;
+  margin-top: 50px;
+  background: #ffffff;
+  height: 450px;
+  width: 350px;
+  border-radius: 6px;
+  border: 1px solid #dbdbdb;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.container-Login .login{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 330px;
-    width: 350px;
-    /* background: #FCF3CF; */
+.container-Login .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+  width: 350px;
+  /* background: #FCF3CF; */
 }
 
-.container-Login .nothing{
-    height: 20px;
-    width: 350px;
+.container-Login .nothing {
+  height: 20px;
+  width: 350px;
 }
 
-.container-Login .register{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 350px;
+.container-Login .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 350px;
 }
 
-.container-Login .login .logo{
-    height: 20%;
-    width: 100%;
+.container-Login .login .logo {
+  height: 20%;
+  width: 100%;
 }
 
-.container-Login .login .formLogin{
-    height: 40%;
-    width: 100%;
+.container-Login .login .formLogin {
+  height: 40%;
+  width: 100%;
 }
 
-.container-Login .login .more{
-    height: 30%;
-    width: 100%;
+.container-Login .login .more {
+  height: 30%;
+  width: 100%;
 }
 
-.container-Login .login .logo div{
-    height: 100%;
-    width: 100%;
+.container-Login .login .logo div {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Login .login .formLogin div{
-    height: 100%;
-    width: 100%; 
+.container-Login .login .formLogin div {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Login .login .more div{
-    height: 100%;
-    width: 100%;    
+.container-Login .login .more div {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Login .login .logo div{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.container-Login .login .logo div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.container-Login .login .formLogin div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.container-Login .login .formLogin div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.container-Login .login .more div{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.container-Login .login .more div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-.container-Login .login .logo div a{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Pacifico', cursive;
-    font-size: 34px;
+.container-Login .login .logo div a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
 }
 
-.container-Login .login .formLogin div input{
-    width: 80%;
-    height: auto;
-    padding: 4px;
-    border: none;
-    outline: none;
-    outline: 1px solid #dbdbdb;
-    border-radius: 2px;
-    font-family: 'Catamaran', sans-serif;
+.container-Login .login .formLogin div input {
+  width: 80%;
+  height: auto;
+  padding: 4px;
+  border: none;
+  outline: none;
+  outline: 1px solid #dbdbdb;
+  border-radius: 2px;
+  font-family: "Catamaran", sans-serif;
 }
 
-.container-Login .login .formLogin div button{
-    width: 80%;
-    height: auto;
-    padding: 6px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background: #4db5f9;
-    color: #ffffff;
-    font-family: 'Catamaran', sans-serif;
+.container-Login .login .formLogin div button {
+  width: 80%;
+  height: auto;
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #4db5f9;
+  color: #ffffff;
+  font-family: "Catamaran", sans-serif;
 }
 
-.container-Login .login .more div span{
-    color: #385185;
-    font-family: 'Catamaran', sans-serif;
-    cursor: pointer;
-    font-weight: bold;
+.container-Login .login .formLogin div .msg-login {
+  color: #e74c3c;
 }
 
-.container-Login .login .more div a{
-    text-decoration: none;
-    color: #385185;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 14px;
+.container-Login .login .more div span {
+  color: #385185;
+  font-family: "Catamaran", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.container-Login .register .signin{
-    height: 100%;
-    width: 100%;
+.container-Login .login .more div a {
+  text-decoration: none;
+  color: #385185;
+  font-family: "Catamaran", sans-serif;
+  font-size: 14px;
 }
 
-.container-Login .register .signin div{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.container-Login .register .signin {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Login .register .signin div span{
-    font-family: 'Catamaran', sans-serif;
-    color: #000000;
+.container-Login .register .signin div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.container-Login .register .signin div button{
-    border: none;
-    outline: none;
-    color: #0095f6;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: bold;
-    cursor: pointer; 
+.container-Login .register .signin div span {
+  font-family: "Catamaran", sans-serif;
+  color: #000000;
+}
+
+.container-Login .register .signin div button {
+  border: none;
+  outline: none;
+  color: #0095f6;
+  font-family: "Catamaran", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Container Register */
 
-.secondContainer{
-    background: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: none;
+.secondContainer {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
 }
 
-.secondContainer .container-Register{
-    margin: auto;
-    margin-top: 50px;
-    background: #ffffff;
-    height: 600px;
-    width: 350px;
-    border-radius: 6px;
-    border: 1px solid #dbdbdb;
-    /* padding: 10px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;   
+.secondContainer .container-Register {
+  margin: auto;
+  margin-top: 50px;
+  background: #ffffff;
+  height: 600px;
+  width: 350px;
+  border-radius: 6px;
+  border: 1px solid #dbdbdb;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.container-Register .register{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 480px;
-    width: 350px;
+.container-Register .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+  width: 350px;
 }
 
-.container-Register .nothing{
-    height: 20px;
-    width: 350px;
+.container-Register .nothing {
+  height: 20px;
+  width: 350px;
 }
 
-.container-Register .iniciar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 350px;
+.container-Register .iniciar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 350px;
 }
 
-.container-Register .register .logo{
-    height: 40%;
-    width: 100%;
+.container-Register .register .logo {
+  height: 40%;
+  width: 100%;
 }
 
-.container-Register .register .formRegister{
-    height: 60%;
-    width: 100%;
+.container-Register .register .formRegister {
+  height: 60%;
+  width: 100%;
 }
 
-.container-Register .register .logo div{
-    height: 100%;
-    width: 100%;
+.container-Register .register .logo div {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Register .register .formRegister div{
-    height: 100%;
-    width: 100%; 
+.container-Register .register .formRegister div {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Register .register .logo div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.container-Register .register .logo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.container-Register .register .formRegister div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.container-Register .register .formRegister div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.container-Register .register .logo div a{
-    text-decoration: none;
-    padding: 20px;
-    color: #000000;
-    font-family: 'Pacifico', cursive;
-    font-size: 34px;
+.container-Register .register .logo div a {
+  text-decoration: none;
+  padding: 20px;
+  color: #000000;
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
 }
 
-.container-Register .register .logo div .info{
-    color: #8e8e8e;
-    width: 80%;
-    height: auto;
-    text-align: center;
-    font-weight: bold;
+.container-Register .register .logo div .info {
+  color: #8e8e8e;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
 }
 
-.container-Register .register .logo div button{
-    width: 80%;
-    height: auto;
-    padding: 6px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background: #0095f6;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: 'Catamaran', sans-serif;
+.container-Register .register .logo div button {
+  width: 80%;
+  height: auto;
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #0095f6;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Catamaran", sans-serif;
 }
 
-.container-Register .register .logo div button:hover{
-    background: #1877f2;
+.container-Register .register .logo div button:hover {
+  background: #1877f2;
 }
 
-.container-Register .register .logo div button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.container-Register .register .logo div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.container-Register .register .formRegister div input{
-    width: 80%;
-    height: auto;
-    padding: 4px;
-    border: none;
-    outline: none;
-    outline: 1px solid #dbdbdb;
-    border-radius: 2px;
-    font-family: 'Catamaran', sans-serif;
+.container-Register .register .formRegister div input {
+  width: 80%;
+  height: auto;
+  padding: 4px;
+  border: none;
+  outline: none;
+  outline: 1px solid #dbdbdb;
+  border-radius: 2px;
+  font-family: "Catamaran", sans-serif;
 }
 
-.container-Register .register .formRegister div span{
-    width: 80%;
-    height: auto;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 12px;
-    color: #8e8e8e;
+.container-Register .register .formRegister div .msg-register {
+  color: #e74c3c;
+  font-size: 16px;
 }
 
-.container-Register .register .formRegister div button{
-    width: 80%;
-    height: auto;
-    padding: 6px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background: #4db5f9;
-    color: #ffffff;
-    font-family: 'Catamaran', sans-serif;
+.container-Register .register .formRegister div span {
+  width: 80%;
+  height: auto;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
 }
 
-.container-Register .iniciar .entrar{
-    height: 100%;
-    width: 100%;
+.container-Register .register .formRegister div button {
+  width: 80%;
+  height: auto;
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #4db5f9;
+  color: #ffffff;
+  font-family: "Catamaran", sans-serif;
 }
 
-.container-Register .iniciar .entrar div{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.container-Register .iniciar .entrar {
+  height: 100%;
+  width: 100%;
 }
 
-.container-Register .iniciar .entrar div span{
-    font-family: 'Catamaran', sans-serif;
-    color: #000000;
+.container-Register .iniciar .entrar div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.container-Register .iniciar .entrar div button{
-    border: none;
-    outline: none;
-    color: #0095f6;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: bold;
-    cursor: pointer; 
+.container-Register .iniciar .entrar div span {
+  font-family: "Catamaran", sans-serif;
+  color: #000000;
+}
+
+.container-Register .iniciar .entrar div button {
+  border: none;
+  outline: none;
+  color: #0095f6;
+  font-family: "Catamaran", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }

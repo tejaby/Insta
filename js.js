@@ -1,57 +1,60 @@
-import { createPosts } from "./createPublicaciones.js"
-import { createStories } from "./createHistoria.js"
+import { createPosts } from "./createPublicaciones.js";
+import { createStories } from "./createHistoria.js";
 
 const publicaciones = document.querySelector(".publicaciones");
 const historias = document.querySelector(".historias");
 
-const obtenerData = async url => {
-    try {
-        const request = await fetch(url);
-        const content = await request.json();
-        const arr = content.contenido;
-        return arr;
-    } catch (e) {
-        console.log("No se encontro la base de datos")
-    }
-}
+const obtenerData = async (url) => {
+  try {
+    const request = await fetch(url);
+    const content = await request.json();
+    const arr = content.contenido;
+    return arr;
+  } catch (e) {
+    console.log("No se encontro la base de datos");
+  }
+};
 
-const cargarMasPosts = entry => {
-    if (entry[0].isIntersecting) {
-        cargarPosts(5)
-    }
-}
+const cargarMasPosts = (entry) => {
+  if (entry[0].isIntersecting) {
+    cargarPosts(5);
+  }
+};
 
 const observar = new IntersectionObserver(cargarMasPosts, {
-    root: null,
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 0.5
+  root: null,
+  rootMargin: "0px 0px 0px 0px",
+  threshold: 0.5,
 });
 
 let contador = 0;
 
-const cargarPosts = async cargar => {
-    let url = "data.txt";
-    const arr = await obtenerData(url);
-    const fragmento = document.createDocumentFragment();
-    for (let i = 0; i < cargar; i++) {
-        if (arr[contador] != undefined) {
-            const newPost = createPosts(arr[contador].usuario, arr[contador].perfil, arr[contador].img, arr[contador].seguidores.length);
-            fragmento.appendChild(newPost);
-            contador++;
-            if (i == cargar - 1) {
-                observar.observe(newPost);
-            }
-        } else {
-            // console.log("no hay mas publicaciones");
-            break;
-        }
-
+const cargarPosts = async (cargar) => {
+  let url = "data.txt";
+  const arr = await obtenerData(url);
+  const fragmento = document.createDocumentFragment();
+  for (let i = 0; i < cargar; i++) {
+    if (arr[contador] != undefined) {
+      const newPost = createPosts(
+        arr[contador].usuario,
+        arr[contador].perfil,
+        arr[contador].img,
+        arr[contador].seguidores.length
+      );
+      fragmento.appendChild(newPost);
+      contador++;
+      if (i == cargar - 1) {
+        observar.observe(newPost);
+      }
+    } else {
+      // console.log("no hay mas publicaciones");
+      break;
     }
-    publicaciones.appendChild(fragmento);
+  }
+  publicaciones.appendChild(fragmento);
 
-    // modal nav
-
-}
+  // modal nav
+};
 const more = document.querySelector(".more");
 
 const contenedorOpciones = document.createElement("div");
@@ -68,7 +71,6 @@ const spanInfomar = document.createElement("span");
 const divSalir = document.createElement("div");
 const aSalir = document.createElement("a");
 const spanSalir = document.createElement("span");
-
 
 contenedorOpciones.classList.add("contenedorOpciones");
 divSetting.classList.add("divSetting");
@@ -115,112 +117,96 @@ contenedorOpciones.appendChild(divInformar);
 contenedorOpciones.appendChild(divSalir);
 
 more.addEventListener("click", () => {
-    if (document.querySelector(".contenedorOpciones")) {
-        document.body.removeChild(contenedorOpciones);
-    } else {
-        document.body.appendChild(contenedorOpciones);
-    }
+  if (document.querySelector(".contenedorOpciones")) {
+    document.body.removeChild(contenedorOpciones);
+  } else {
+    document.body.appendChild(contenedorOpciones);
+  }
 });
 
 addEventListener("keyup", (e) => {
-    if (e.key == "Escape" && document.querySelector(".contenedorOpciones")) {
-        document.body.removeChild(contenedorOpciones);
-    }
-})
+  if (e.key == "Escape" && document.querySelector(".contenedorOpciones")) {
+    document.body.removeChild(contenedorOpciones);
+  }
+});
 
 divAspecto.addEventListener("click", () => {
-    document.body.removeChild(contenedorOpciones);
-})
+  document.body.removeChild(contenedorOpciones);
+});
 
 divSalir.addEventListener("click", () => {
-    setTimeout(() => {
-        window.location.href = "./index.html"
-    }, 1000);
-})
-
-
+  setTimeout(() => {
+    window.location.href = "./index.html";
+  }, 1000);
+});
 
 const nav = document.getElementById("nav");
 const navA = document.querySelector(".navA");
-const links_div = document.querySelectorAll(".links-div")
+const links_div = document.querySelectorAll(".links-div");
 const spanA = document.querySelectorAll(".material-icons");
 const linksA = document.querySelectorAll(".linksA");
 const spanO = document.querySelector(".menu");
 const spanOs = document.querySelector(".mas");
 
 divAspecto.addEventListener("click", () => {
-    document.body.classList.toggle("themeB");
-    navA.classList.toggle("themeNavA");
-    nav.classList.toggle("themeN");
-    for (let i = 0; i < links_div.length; i++) {
-        links_div[i].classList.toggle("themeDivLinks");
-        spanA[i].classList.toggle("themeLinksS");
-        linksA[i].classList.toggle("themeLinksA");
-    }
-    more.classList.toggle("themeDivO");
-    spanO.classList.toggle("themeOptionS");
-    spanOs.classList.toggle("themeOptionS");
-    historias.classList.toggle("themeH");
-    publicaciones.classList.toggle("themeP");
+  document.body.classList.toggle("themeB");
+  navA.classList.toggle("themeNavA");
+  nav.classList.toggle("themeN");
+  for (let i = 0; i < links_div.length; i++) {
+    links_div[i].classList.toggle("themeDivLinks");
+    spanA[i].classList.toggle("themeLinksS");
+    linksA[i].classList.toggle("themeLinksA");
+  }
+  more.classList.toggle("themeDivO");
+  spanO.classList.toggle("themeOptionS");
+  spanOs.classList.toggle("themeOptionS");
+  historias.classList.toggle("themeH");
+  publicaciones.classList.toggle("themeP");
 
-    contenedorOpciones.classList.toggle("themeDivContO");
-    divSetting.classList.toggle("divOpciones");
-    divAspecto.classList.toggle("divOpciones");
-    divInformar.classList.toggle("divOpciones");
-    divSalir.classList.toggle("divOpciones");
+  contenedorOpciones.classList.toggle("themeDivContO");
+  divSetting.classList.toggle("divOpciones");
+  divAspecto.classList.toggle("divOpciones");
+  divInformar.classList.toggle("divOpciones");
+  divSalir.classList.toggle("divOpciones");
 
-    aSetting.classList.toggle("aOpciones");
-    aAspecto.classList.toggle("aOpciones");
-    aInformar.classList.toggle("aOpciones");
-    aSalir.classList.toggle("aOpciones");
+  aSetting.classList.toggle("aOpciones");
+  aAspecto.classList.toggle("aOpciones");
+  aInformar.classList.toggle("aOpciones");
+  aSalir.classList.toggle("aOpciones");
 
-    spanSetting.classList.toggle("spanOpciones");
-    spanAspecto.classList.toggle("spanOpciones");
-    spanInfomar.classList.toggle("spanOpciones");
-    spanSalir.classList.toggle("spanOpciones");
-
-})
+  spanSetting.classList.toggle("spanOpciones");
+  spanAspecto.classList.toggle("spanOpciones");
+  spanInfomar.classList.toggle("spanOpciones");
+  spanSalir.classList.toggle("spanOpciones");
+});
 
 let accountant = 0;
 
 const cargarStories = async () => {
-    let url = "data.txt";
-    const arr = await obtenerData(url);
-    const fragmento = document.createDocumentFragment();
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[accountant] != undefined) {
-            const newStorie = createStories(arr[accountant].usuario, arr[accountant].perfil, arr[accountant].historia);
-            if (newStorie) {
-                fragmento.appendChild(newStorie);
-            }
-            accountant++;
-        } else {
-            console.log("no hay mas historias");
-            break;
-        }
+  let url = "data.txt";
+  const arr = await obtenerData(url);
+  const fragmento = document.createDocumentFragment();
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[accountant] != undefined) {
+      const newStorie = createStories(
+        arr[accountant].usuario,
+        arr[accountant].perfil,
+        arr[accountant].historia
+      );
+      if (newStorie) {
+        fragmento.appendChild(newStorie);
+      }
+      accountant++;
+    } else {
+      console.log("no hay mas historias");
+      break;
     }
-    historias.appendChild(fragmento);
-
-}
-
+  }
+  historias.appendChild(fragmento);
+};
 
 addEventListener("load", () => {
-    cargarPosts(5);
-    cargarStories();
-})
+  cargarPosts(5);
+  cargarStories();
+});
 // Hay 47 usuarios.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
